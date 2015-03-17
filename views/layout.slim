@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+    meta name='description' content='Infos, Portfolio, Kontakt - Kai-Michael Prüß, Ruby Web Developer'
+
+    title Kai-Michael Prüß - Ruby Web Developer
+
+    link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/base-min.css'
+    link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css'
+    link rel='stylesheet' href='application.css'
+    link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'
+
+  body
+    #layout.pure-g
+      .sidebar.pure-u-1.pure-u-md-1-4
+        header
+          img src='kai-michael_pruess.jpg'
+          h1 Kai-Michael Prüß
+          h2 Web Developer
+          nav
+            ul
+              li
+                a href='/' Info
+              li
+                a href='/portfolio' Portfolio
+              li
+                a href='/contact' Kontakt
+
+    .content.pure-u-1.pure-u-md-3-4
+      == yield

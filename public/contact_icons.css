@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'contact_icons';
+  src: url('../font/contact_icons.eot?21691303');
+  src: url('../font/contact_icons.eot?21691303#iefix') format('embedded-opentype'),
+       url('../font/contact_icons.woff?21691303') format('woff'),
+       url('../font/contact_icons.ttf?21691303') format('truetype'),
+       url('../font/contact_icons.svg?21691303#contact_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "contact_icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  opacity: .8;
+
+  font-variant: normal;
+  text-transform: none;
+}
+
+.icon-xing:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e802'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
+.icon-mail-alt:before { content: '\e804'; } /* '' */
+.icon-location:before { content: '\e807'; } /* '' */
