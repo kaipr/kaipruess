@@ -1,11 +1,18 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    mina (0.3.3)
+      open4 (~> 1.3.4)
+      rake
+    mina-puma (0.2.0)
+      mina
+    open4 (1.3.4)
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    rake (10.4.2)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -21,6 +28,8 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  mina
+  mina-puma
   puma
   sinatra
   slim
